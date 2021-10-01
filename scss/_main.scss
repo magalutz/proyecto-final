@@ -1,0 +1,18 @@
+$animal: gato; 
+
+div {
+    @if $animal == gato {
+        color: brown;
+        
+    }
+}
+
+@for $i from 1 through 6 {
+    //interpolaciones
+    
+    h#{$i} {
+        font-size: $i * 2cm;
+    }
+
+    
+}

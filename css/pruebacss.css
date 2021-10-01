@@ -1,0 +1,32 @@
+div {
+  width: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  div h4 {
+    color: chartreuse; }
+
+div {
+  color: brown; }
+
+h1 {
+  font-size: 2cm; }
+
+h2 {
+  font-size: 4cm; }
+
+h3 {
+  font-size: 6cm; }
+
+h4 {
+  font-size: 8cm; }
+
+h5 {
+  font-size: 10cm; }
+
+h6 {
+  font-size: 12cm; }
+
+.btn-instagram {
+  background-color: #99288a; }
+
+.btn-facebook {
+  background-color: #3131d8; }

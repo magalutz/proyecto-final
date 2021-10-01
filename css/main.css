@@ -1,0 +1,236 @@
+/* - comentario prubea css */
+main h1 {color: #7072A5;}
+
+
+
+h2 { text-align: center; color: darkblue;}
+
+
+
+#p-1 {color: #bd57b8;}
+
+#p-2 {color: #3c05d3;}
+
+.color-main { color: #ff7300;}
+
+#tabla-1 {color: #020452;}
+ 
+.font-size-primary { font-size: 20px;}
+
+.titular-main { 
+    font-family: 'Roboto', sans-serif;  
+    font-size: 50px;
+    font-weight: 600;
+
+    line-height: 2;
+
+    text-align: center;
+}
+
+.uppercase { 
+    font-family: 'Roboto', sans-serif;  
+    font-size: 25px;
+    font-weight: 200;
+
+    line-height: 2;
+
+    text-align: justify;
+
+    text-transform: uppercase;
+}
+
+.separacion {
+   height: 300px;
+}
+
+
+    /* - header { height: 50vh; background-image: url(../public/img/chirusass\ logo\ mini.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;*/
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+ }
+
+ul {
+    
+    margin: 0;
+    list-style-type: none;
+ }
+ 
+ li {
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+ }
+
+ .half-1 {
+    
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+ }
+
+.half-2 {
+   
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 50% 50%;
+   grid-template-areas: 
+      "titulo-nosotras titulo-nosotras"
+      "imagen-nosotras texto-nosotras";
+   }
+   
+   #titulo-nosotras {
+   grid-area: titulo-nosotras;
+   }
+
+   #texto-nosotras {
+   grid-area: texto-nosotras}
+
+   #imagen-nosotras{
+      height: fit-content;
+      position: relative;
+   grid-area: imagen-nosotras;
+   }
+   /*
+      display: flex ;
+      flex-direction: row;
+      flex-wrap: wrap; 
+      justify-content: space-around;
+      */
+   
+
+  
+
+
+main {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+ }
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+
+ nav ul li { 
+    padding: 20px; 
+ }
+
+.grid-container-1 { 
+   height: 30vh;
+   display: grid;
+   grid-template-columns: 40%  60%;
+   grid-template-rows: 80% 20%;
+   grid-template-areas: 
+      "imagen-logo imagen-nombre"
+      "nav-menu nav-menu";
+}
+
+#imagen-logo {
+   grid-area: imagen-logo;
+}
+
+#imagen-nombre {
+   grid-area: imagen-nombre;}
+
+#nav-menu {
+   grid-area: nav-menu;
+}
+
+
+.imagen-nombre { 
+   background-image: url(../public/img/chirusass\ nombre.jpg);
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: contain;
+ 
+}
+
+.imagen-logo { 
+   background-image: url(../public/img/chirusass\ logo\ mini.jpg);
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: contain;
+
+   animation-name: mundo;
+   animation-iteration-count: initial;
+   animation-timing-function: ease-in;
+   animation-duration: 2s;
+   
+}
+
+
+
+
+
+
+/* - practica en clase 
+ .flex-container {
+    background-color: chocolate;
+    padding: 20px;
+
+    display: flex ;
+
+    /* - el flex direction lo tengo que poner si o si, row es en linea y ya viene predeterminado */
+    
+
+    /* - estos dos los puedo poner juntos en flex-flow*/
+
+/* .flex-container div {
+    background-color: olive;
+    padding: 10px;
+     margin: 2px;
+    ;
+ }*/
+
+
+.fondo {
+   background: rgb(1,163,140);
+background: linear-gradient(90deg, rgba(1,163,140,1) 0%, rgba(0,0,0,1) 140%, rgba(0,0,0,1) 163%);}
+
+.color-paginas {
+   color: ivory;
+}
+
+.hijo {
+   height: 100px;
+   position: center;
+   transition: all 1s;
+}
+.hijo:hover {
+   
+   transform: scale(1.5);
+   position: center;
+
+ 
+}
+
+@keyframes mundo {
+   0% {
+      width: 100px;
+      
+   }
+
+   50% {
+      width: 200px;
+  
+
+   }
+   
+   100% {
+      width: 300px;
+   
+
+   }
+}
+
